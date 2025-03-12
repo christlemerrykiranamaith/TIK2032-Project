@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <style>
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('picture/pink-sky-background-with-crescent-moon.jpg'); 
+            background-size: cover; 
+            
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 90px;
+            font-size: 25px;
+            color: rgb(87, 87, 87);
+        }
+        nav {
+            display: flex;
+            gap: 55px;
+        }
+        nav a {
+            color: rgb(87, 87, 87);
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            height: 87vh;
+            
+           
+        }
+        .profile, .container div:last-child {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%; 
+        }
+        .profile img {
+            width: 70%; 
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 18px;
+            background-color: #f7e2f5;
+            color: rgb(0, 0, 0);
+            position: relative;
+            bottom: 0;
+        }
+        .about {
+            font-size: 22px;
+            padding: 30px;
+            padding-right: 100px;
+            color: rgb(87, 87, 87);
+
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <span class="logo">Portofolio</span>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="profile">
+        <img src="picture\profil.jpg" alt="Foto Profil">
+    </div>
+    <div class="about">
+        <h1>Christle Maith</h1>
+        <p>Selamat datang di portofolio saya! Saya adalah seorang Mahasiswa yang memiliki ketertarikan dalam bidang IT dan Bisnis. Saya memiliki usaha dalam bidang fashion, Di sini Anda dapat menemukan beberapa produk dan informasi lebih lanjut tentang saya.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Christle Maith
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('picture/pink-sky-background-with-crescent-moon.jpg');
+            background-size: cover;
+            
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 90px;
+            font-size: 25px;
+            color: rgb(87, 87, 87);
+        }
+        nav {
+            display: flex;
+            gap: 55px;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            color: rgb(87, 87, 87);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 40px;
+        }
+        .gallery-item {
+            width: 25%;
+            height: auto;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 18px;
+            background-color: #f7e2f5;
+            color: rgb(0, 0, 0);
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <span class="logo">Gallery</span>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="gallery-item"><img src="picture/baju1.jpg" alt="Gambar 1"></div>
+    <div class="gallery-item"><img src="picture/baju2.jpg" alt="Gambar 2"></div>
+    <div class="gallery-item"><img src="picture/baju3.jpg" alt="Gambar 3"></div>
+    <div class="gallery-item"><img src="picture/baju4.jpg" alt="Gambar 4"></div>
+    <div class="gallery-item"><img src="picture/baju5.jpg" alt="Gambar 5"></div>
+    <div class="gallery-item"><img src="picture/baju6.jpg" alt="Gambar 6"></div>
+</div>
+
+<footer>
+    &copy; 2025 Christle Maith
+</footer>
+
+</body>
+</html>
