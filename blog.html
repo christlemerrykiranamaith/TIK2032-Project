@@ -3,108 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <style>
-        body {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('picture/pink-sky-background-with-crescent-moon.jpg'); 
-            background-size: cover; 
-            height: 100%;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 90px;
-            font-size: 25px;
-            color: rgb(87, 87, 87);
-        }
-        nav {
-            display: flex;
-            gap: 55px;
-        }
-        nav a {
-            color: rgb(87, 87, 87);
-            text-decoration: none;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            padding: 140px;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            padding-bottom: 200px;
-        }
-        .article-item {
-            width: 30%;
-            background: rgb(255, 255, 255);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-        .article-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .article-item a {
-            display: block;
-            margin-top: 10px;
-            color: rgb(0, 0, 0);
-            font-weight: bold;
-            text-decoration: none;
-        }
-        footer {
-            text-align: center;
-            padding: 18px;
-            background-color: #f7e2f5;
-            color: rgb(0, 0, 0);
-            position: relative;
-            bottom: 0;
-        }
-    </style>
+    <meta name="description" content="Fashion blog by Christle Maith featuring latest trends and insights">
+    <title>Blog - Christle Maith</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add favicon if available -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
-
-<header>
-    <span class="logo">Blog</span>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="article.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<div class="container">
-    <div class="article-item">
-        <img src="https://media.gq.com/photos/67c9baea566a0ec0d31c1ebb/16:9/w_1920,c_limit/With%20love%20megan_0000_WLM.jpg" alt="Fashion Trend 1">
-        <h2>Meaghan Markle's With Love, Meghan Is Almost Like Watching Nothing at All</h2>
-        <p>Here’s what Meghan Markle’s new Netflix show is like: You know when you’re watching a recipe video, and it all starts out fairly normal, with them giving you a little shopping list of ingredients you recognize and feel comfortable with...</p>
-        <a href="https://www.gq.com/story/meaghan-markles-with-love-meghan" target="_blank">Baca Selengkapnya</a>
+    <!-- Page Loader -->
+    <div class="loader">
+        <div class="spinner"></div>
     </div>
-    <div class="article-item">
-        <img src="https://media.gq.com/photos/67b74e76183c4a535f5199d7/16:9/w_1920,c_limit/SN-NL-WEB.jpg" alt="Fashion Sustainability">
-        <h2>The Inside Story Behind A$AP Rocky’s ‘Comfortable’ Trial Style</h2>
-        <p>The rapper, actor, and all-around style dynamo creates men’s fashion magic every time he graces a red carpet or sits front row at a runway show. But this time, Rocky was preparing for a high-stakes appearance of a much different kind...</p>
-        <a href="https://www.gq.com/story/asap-rocky-trial-style-suits" target="_blank">Baca Selengkapnya</a>
-    </div>
-    <div class="article-item">
-        <img src="https://media.gq.com/photos/67b49a3ed6289826611e3ab8/16:9/w_1920,c_limit/2199990905" alt="Street Style Inspiration">
-        <h2>Timothée Chalamet Leveled Up a Clean Black Suit</h2>
-        <p>Timothée Chalamet has been pulling off some serious fashion stunts lately. In all baby pink Chrome Hearts, in Chanel scarves and leather jackets, and in full-on Bob Dylan cosplay (including blond wig). So perhaps the biggest sartorial...</p>
-        <a href="https://www.gq.com/story/timothee-chalamet-baftas-2025" target="_blank">Baca Selengkapnya</a>
-    </div>
-</div>
 
-<footer>
-    &copy; 2025 Christle Maith
-</footer>
+    <!-- Header -->
+    <header>
+        <span class="logo">Blog</span>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger">
+            <span>☰</span>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <div class="container">
+        <div class="blog-container">
+            <div class="article-item animate-on-scroll">
+                <!-- Using placeholder images directly to avoid loading issues -->
+                <img src="https://media.gq.com/photos/67c9baea566a0ec0d31c1ebb/16:9/w_1920,c_limit/With%20love%20megan_0000_WLM.jpg" alt="Fashion Trend 1">
+                <h2>Meaghan Markle's With Love, Meghan Is Almost Like Watching Nothing at All</h2>
+                <p>Here's what Meghan Markle's new Netflix show is like: You know when you're watching a recipe video, and it all starts out fairly normal, with them giving you a little shopping list of ingredients you recognize and feel comfortable with...</p>
+                <a href="https://www.gq.com/story/meaghan-markles-with-love-meghan" target="_blank" rel="noopener noreferrer">Baca Selengkapnya</a>
+            </div>
+            <div class="article-item animate-on-scroll">
+                <img src="https://media.gq.com/photos/67b74e76183c4a535f5199d7/16:9/w_1920,c_limit/SN-NL-WEB.jpg" alt="Fashion Sustainability">
+                <h2>The Inside Story Behind A$AP Rocky's 'Comfortable' Trial Style</h2>
+                <p>The rapper, actor, and all-around style dynamo creates men's fashion magic every time he graces a red carpet or sits front row at a runway show. But this time, Rocky was preparing for a high-stakes appearance of a much different kind...</p>
+                <a href="https://www.gq.com/story/asap-rocky-trial-style-suits" target="_blank" rel="noopener noreferrer">Baca Selengkapnya</a>
+            </div>
+            <div class="article-item animate-on-scroll">
+                <img src="https://media.gq.com/photos/67b49a3ed6289826611e3ab8/16:9/w_1920,c_limit/2199990905" alt="Street Style Inspiration">
+                <h2>Timothée Chalamet Leveled Up a Clean Black Suit</h2>
+                <p>Timothée Chalamet has been pulling off some serious fashion stunts lately. In all baby pink Chrome Hearts, in Chanel scarves and leather jackets, and in full-on Bob Dylan cosplay (including blond wig). So perhaps the biggest sartorial...</p>
+                <a href="https://www.gq.com/story/timothee-chalamet-baftas-2025" target="_blank" rel="noopener noreferrer">Baca Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switch" title="Toggle Dark/Light Mode">
+        🌙
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Christle Maith | All Rights Reserved
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>

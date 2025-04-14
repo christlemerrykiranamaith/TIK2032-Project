@@ -3,93 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <style>
-        body {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('picture/pink-sky-background-with-crescent-moon.jpg'); 
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 90px;
-            font-size: 25px;
-            color: rgb(87, 87, 87);
-        }
-        nav {
-            display: flex;
-            gap: 55px;
-        }
-        nav a {
-            color: rgb(87, 87, 87);
-            text-decoration: none;
-        }
-        .container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 22px;
-            margin: 15px 0;
-        }
-
-        .contact-item a{
-            text-decoration: none; 
-            color: rgb(0, 0, 0);
-            font-weight: bold; 
-}
-        
-
-        footer {
-            text-align: center;
-            padding: 18px;
-            background-color: #f7e2f5;
-            color: rgb(0, 0, 0);
-        }
-    </style>
+    <meta name="description" content="Contact Christle Maith for fashion inquiries and collaborations">
+    <title>Contact - Christle Maith</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add favicon if available -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
-
-<header>
-    <span class="logo">Contact</span>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<div class="container">
-    <h1>Contact Me</h1>
-    <div class="contact-item">
-        <a href="https://www.instagram.com/christleemaith" target="_blank">ig : @christleemaith</a>
+    <!-- Page Loader -->
+    <div class="loader">
+        <div class="spinner"></div>
     </div>
-    <div class="contact-item">
-        <a href="mailto:maithchristle@yahoo.com">email : maithchristle@yahoo.com</a>
-    </div>
-    <div class="contact-item">
-        <a href="https://wa.me/682290685552" target="_blank">whatsupp : +62 822-9068-5552</a>
-    </div>
-</div>
 
-<footer>
-    &copy; 2025 Christle Maith
-</footer>
+    <!-- Header -->
+    <header>
+        <span class="logo">Contact</span>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="hamburger">
+            <span>☰</span>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <div class="contact-container">
+        <h1 class="animate-on-scroll">Contact Me</h1>
+        
+        <!-- Contact Form -->
+        <div class="contact-form animate-on-scroll">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="contact-info animate-on-scroll">
+            <div class="contact-item">
+                <a href="https://www.instagram.com/christleemaith" target="_blank" rel="noopener noreferrer">
+                    <span>Instagram: @christleemaith</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="mailto:maithchristle@yahoo.com">
+                    <span>Email: maithchristle@yahoo.com</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://wa.me/682290685552" target="_blank" rel="noopener noreferrer">
+                    <span>WhatsApp: +62 822-9068-5552</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switch" title="Toggle Dark/Light Mode">
+        🌙
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Christle Maith | All Rights Reserved
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>

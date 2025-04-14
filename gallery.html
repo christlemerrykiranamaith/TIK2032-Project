@@ -3,84 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <style>
-        body {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('picture/pink-sky-background-with-crescent-moon.jpg');
-            background-size: cover;
-            
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 90px;
-            font-size: 25px;
-            color: rgb(87, 87, 87);
-        }
-        nav {
-            display: flex;
-            gap: 55px;
-        }
-        nav a {
-            color: black;
-            text-decoration: none;
-            color: rgb(87, 87, 87);
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            padding: 40px;
-        }
-        .gallery-item {
-            width: 25%;
-            height: auto;
-        }
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 18px;
-            background-color: #f7e2f5;
-            color: rgb(0, 0, 0);
-            position: relative;
-            bottom: 0;
-        }
-    </style>
+    <meta name="description" content="Gallery of fashion products by Christle Maith">
+    <title>Gallery - Christle Maith</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add favicon if available -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
+    <!-- Page Loader -->
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
 
-<header>
-    <span class="logo">Gallery</span>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <!-- Header -->
+    <header>
+        <span class="logo">Gallery</span>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger">
+            <span>☰</span>
+        </div>
+    </header>
 
-<div class="container">
-    <div class="gallery-item"><img src="picture/baju1.jpg" alt="Gambar 1"></div>
-    <div class="gallery-item"><img src="picture/baju2.jpg" alt="Gambar 2"></div>
-    <div class="gallery-item"><img src="picture/baju3.jpg" alt="Gambar 3"></div>
-    <div class="gallery-item"><img src="picture/baju4.jpg" alt="Gambar 4"></div>
-    <div class="gallery-item"><img src="picture/baju5.jpg" alt="Gambar 5"></div>
-    <div class="gallery-item"><img src="picture/baju6.jpg" alt="Gambar 6"></div>
-</div>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Optional Filter Buttons for Future Use -->
+        <!-- <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="dress">Dresses</button>
+            <button class="filter-btn" data-filter="top">Tops</button>
+            <button class="filter-btn" data-filter="bottom">Bottoms</button>
+        </div> -->
+        
+        <div class="gallery-container">
+            <div class="gallery-item animate-on-scroll" data-category="dress">
+                <img src="picture/baju1.jpg" alt="Fashion Item 1 - Elegant dress">
+            </div>
+            <div class="gallery-item animate-on-scroll" data-category="top">
+                <img src="picture/baju2.jpg" alt="Fashion Item 2 - Stylish top">
+            </div>
+            <div class="gallery-item animate-on-scroll" data-category="bottom">
+                <img src="picture/baju3.jpg" alt="Fashion Item 3 - Comfortable bottom">
+            </div>
+            <div class="gallery-item animate-on-scroll" data-category="dress">
+                <img src="picture/baju4.jpg" alt="Fashion Item 4 - Party dress">
+            </div>
+            <div class="gallery-item animate-on-scroll" data-category="top">
+                <img src="picture/baju5.jpg" alt="Fashion Item 5 - Casual top">
+            </div>
+            <div class="gallery-item animate-on-scroll" data-category="bottom">
+                <img src="picture/baju6.jpg" alt="Fashion Item 6 - Trendy bottom">
+            </div>
+        </div>
+    </div>
 
-<footer>
-    &copy; 2025 Christle Maith
-</footer>
-
-</body>
-</html>
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <img src="" alt="Enlarged fashion item">
+        <span class="close-lightbox">&times;</span>
+        <div class="theme-switch" title="Toggle Dark/Light Mode">
+            🌙
+        </div>
+    
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 Christle Maith | All Rights Reserved
+        </footer>
+    
+        <!-- JavaScript -->
+        <script src="js/main.js"></script>
+        <script src="js/gallery.js"></script>
+    </body>
+    </html>
