@@ -6,18 +6,15 @@
     <meta name="description" content="Gallery of fashion products by Christle Maith">
     <title>Gallery - Christle Maith</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Add favicon if available -->
-    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <!-- Page Loader -->
     <div class="loader">
         <div class="spinner"></div>
     </div>
 
-    <!-- Header -->
     <header>
-        <span class="logo">Gallery</span>
+        <span class="logo">Christle Maith</span>
         <nav>
             <a href="index.html">Home</a>
             <a href="gallery.html" class="active">Gallery</a>
@@ -29,53 +26,106 @@
         </div>
     </header>
 
-    <!-- Main Content -->
+    <div class="gallery-hero">
+        <h1>Fashion Collections</h1>
+        <p>Explore our latest designs and collections</p>
+    </div>
+
     <div class="container">
-        <!-- Optional Filter Buttons for Future Use -->
-        <!-- <div class="filter-container">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="dress">Dresses</button>
-            <button class="filter-btn" data-filter="top">Tops</button>
-            <button class="filter-btn" data-filter="bottom">Bottoms</button>
-        </div> -->
+        <div class="search-sort-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="sort-box">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select">
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                </select>
+            </div>
+        </div>
         
         <div class="gallery-container">
-            <div class="gallery-item animate-on-scroll" data-category="dress">
-                <img src="picture/baju1.jpg" alt="Fashion Item 1 - Elegant dress">
+            <div class="gallery-item" data-aos="fade-up" data-category="dress" data-name="Elegant Evening Dress" data-date="2024-12-01">
+                <img src="picture/baju1.jpg" alt="Evening Dress">
+                <div class="item-overlay">
+                    <h3>Elegant Evening Dress</h3>
+                    <p>Perfect for formal events and special occasions</p>
+                    <a href="#" class="details-btn">View Details</a>
+                </div>
+
             </div>
-            <div class="gallery-item animate-on-scroll" data-category="top">
-                <img src="picture/baju2.jpg" alt="Fashion Item 2 - Stylish top">
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" data-category="top" data-name="Casual Blouse" data-date="2024-11-15">
+                <img src="picture/baju2.jpg" alt="Casual Blouse">
+                <div class="item-overlay">
+                    <h3>Office Blouse</h3>
+                    <p>Professional look for your workplace wardrobe</p>
+                    <a href="#" class="details-btn">View Details</a>
+                </div>
             </div>
-            <div class="gallery-item animate-on-scroll" data-category="bottom">
-                <img src="picture/baju3.jpg" alt="Fashion Item 3 - Comfortable bottom">
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" data-category="bottom" data-name="Stylish Pants" data-date="2024-10-20">
+                <img src="picture/baju3.jpg" alt="Stylish Pants">
+                <div class="item-overlay">
+                    <h3>Summer Dress</h3>
+                    <p>Light and airy design for hot summer days</p>
+                    <a href="#" class="details-btn">View Details</a>
+                </div>
             </div>
-            <div class="gallery-item animate-on-scroll" data-category="dress">
-                <img src="picture/baju4.jpg" alt="Fashion Item 4 - Party dress">
+            <div class="gallery-item" data-aos="fade-up" data-category="dress" data-name="Summer Dress" data-date="2024-09-05">
+                <img src="picture/baju4.jpg" alt="Summer Dress">
+                <div class="item-overlay">
+                    <h3>Simple Dress</h3>
+                    <p>Elegant design that complements any occasion</p>
+                    <a href="#" class="details-btn">View Details</a>
+                </div>
             </div>
-            <div class="gallery-item animate-on-scroll" data-category="top">
-                <img src="picture/baju5.jpg" alt="Fashion Item 5 - Casual top">
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" data-category="top" data-name="Office Blouse" data-date="2024-08-12">
+                <img src="picture/baju5.jpg" alt="Office Blouse">
+                <div class="item-overlay">
+                    <h3>Casual Blouse </h3>
+                    <p>Comfortable yet stylish for everyday wear</p>
+                    <a href="#" class="details-btn">View Details</a>
+                </div>
             </div>
-            <div class="gallery-item animate-on-scroll" data-category="bottom">
-                <img src="picture/baju6.jpg" alt="Fashion Item 6 - Trendy bottom">
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" data-category="bottom" data-name="Designer Skirt" data-date="2024-07-25">
+                <img src="picture/baju6.jpg" alt="Designer Skirt">
+                <div class="item-overlay">
+                    <h3>Emo Skirt</h3>
+                    <p>simple design to wear anywhere
+                    </p>
+                    <a href="#" class="details-btn">View Details</a>
+                </div>
             </div>
+        </div>
+        
+        <div class="pagination" data-aos="fade-up">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn next">Next →</button>
         </div>
     </div>
 
-    <!-- Lightbox -->
     <div class="lightbox">
         <img src="" alt="Enlarged fashion item">
-        <span class="close-lightbox">&times;</span>
-        <div class="theme-switch" title="Toggle Dark/Light Mode">
-            🌙
+        <div class="lightbox-details">
+            <h2></h2>
+            <p></p>
+            <div class="lightbox-tags"></div>
         </div>
-    
-        <!-- Footer -->
-        <footer>
-            &copy; 2025 Christle Maith | All Rights Reserved
-        </footer>
-    
-        <!-- JavaScript -->
-        <script src="js/main.js"></script>
-        <script src="js/gallery.js"></script>
-    </body>
-    </html>
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-nav">
+            <span class="prev-item">←</span>
+            <span class="next-item">→</span>
+        </div>
+    </div>
+
+
+    <footer>
+        &copy; 2025 Christle Maith | All Rights Reserved
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

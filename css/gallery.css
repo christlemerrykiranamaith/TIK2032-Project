@@ -1,0 +1,59 @@
+.gallery-search {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+.gallery-search input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.gallery-search input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 8px rgba(158, 123, 155, 0.4);
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.gallery-container.masonry {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.gallery-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.5s ease,

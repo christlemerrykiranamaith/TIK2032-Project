@@ -1,0 +1,206 @@
+/* Blog Page Styles */
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.article-item {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.article-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.article-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.article-item h2 {
+    padding: 20px 20px 10px;
+    color: var(--accent-color);
+    font-size: 24px;
+}
+
+.article-item p {
+    padding: 0 20px 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.article-item a {
+    display: inline-block;
+    margin: 0 20px 20px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.article-item a:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* Contact Page Styles */
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--accent-color);
+    font-size: 36px;
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(158, 123, 155, 0.2);
+}
+
+.contact-form button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.contact-item {
+    margin-bottom: 15px;
+}
+
+.contact-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: var(--transition);
+    border-radius: var(--border-radius);
+}
+
+.contact-item a:hover {
+    background-color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.success-message {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Fixed duplicate item-overlay in original CSS */
+.item-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    transform: translateY(100px);
+    transition: var(--transition);
+    opacity: 0;
+}
+
+/* Animation for elements */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container h1 {
+        font-size: 28px;
+    }
+    
+    .contact-form,
+    .contact-info {
+        padding: 20px;
+    }
+}

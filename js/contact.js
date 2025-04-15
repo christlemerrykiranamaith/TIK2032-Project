@@ -109,3 +109,33 @@ document.addEventListener('DOMContentLoaded', function() {
         return re.test(String(email).toLowerCase());
     }
 });
+
+// Animation script for blog and contact pages
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle animations for elements with animate-on-scroll class
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    
+    // Function to check if element is in viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8 &&
+            rect.bottom >= 0
+        );
+    }
+    
+    // Function to handle scroll animation
+    function handleScrollAnimation() {
+        animatedElements.forEach(element => {
+            if (isInViewport(element)) {
+                element.classList.add('active');
+            }
+        });
+    }
+    
+    // Initial check for elements in viewport
+    handleScrollAnimation();
+    
+    // Listen for scroll events
+    window.addEventListener('scroll', handleScrollAnimation);
+});

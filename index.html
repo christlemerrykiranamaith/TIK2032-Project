@@ -6,7 +6,7 @@
     <meta name="description" content="Portfolio website of Christle Maith - IT and Business enthusiast">
     <title>Christle Maith - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-   
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="loader">
@@ -14,7 +14,7 @@
     </div>
 
     <header>
-        <span class="logo">Portfolio</span>
+        <span class="logo">Christle Maith</span>
         <nav>
             <a href="index.html" class="active">Home</a>
             <a href="gallery.html">Gallery</a>
@@ -27,25 +27,58 @@
     </header>
 
     <div class="home-container">
-        <div class="profile animate-on-scroll">
+        <div class="profile" data-aos="fade-right" data-aos-duration="1000">
             <img src="picture/profil.jpg" alt="Christle Maith Profile Photo">
         </div>
-        <div class="about animate-on-scroll">
+        <div class="about" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <h1>Christle Maith</h1>
             <p>Selamat datang di portfolio saya! Saya adalah seorang Mahasiswa yang memiliki ketertarikan dalam bidang IT dan Bisnis. Saya memiliki usaha dalam bidang fashion, Di sini Anda dapat menemukan beberapa produk dan informasi lebih lanjut tentang saya.</p>
-            <div class="social-links">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">12+</span>
+                    <span class="stat-label">Collections</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Products</span>
+                </div>
+               
             </div>
+            <a href="gallery.html" class="cta-button">View Gallery</a>
         </div>
     </div>
 
-    <div class="theme-switch" title="Toggle Dark/Light Mode">
-        🌙
-    </div>
+    <section class="featured-section">
+        <h2 data-aos="fade-up">Featured Products</h2>
+        <div class="featured-grid">
+            <div class="featured-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="picture/baju1.jpg" alt="Featured Product 1">
+                <div class="featured-overlay">
+                    <a href="gallery.html" class="view-btn">View Details</a>
+                </div>
+            </div>
+            <div class="featured-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="picture/baju2.jpg" alt="Featured Product 2">
+                <div class="featured-overlay">
+                    <a href="gallery.html" class="view-btn">View Details</a>
+                </div>
+            </div>
+            <div class="featured-item" data-aos="zoom-in" data-aos-delay="300">
+                <img src="picture/baju3.jpg" alt="Featured Product 3">
+                <div class="featured-overlay">
+                    <a href="gallery.html" class="view-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
 
     <footer>
         &copy; 2025 Christle Maith | All Rights Reserved
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
